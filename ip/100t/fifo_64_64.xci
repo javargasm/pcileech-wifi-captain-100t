@@ -402,7 +402,7 @@
         "OUTPUTDIR": [ { "value": "../../../../pcileech_tbx4.gen/sources_1/ip/fifo_64_64" } ],
         "SELECTEDSIMMODEL": [ { "value": "" } ],
         "SHAREDDIR": [ { "value": "." } ],
-        "SWVERSION": [ { "value": "2023.2" } ],
+        "SWVERSION": [ { "value": "2023.2.2" } ],
         "SYNTHESISFLOW": [ { "value": "OUT_OF_CONTEXT" } ]
       }
     },

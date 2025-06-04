@@ -4,7 +4,7 @@
     "xci_name": "pcie_7x_0",
     "component_reference": "xilinx.com:ip:pcie_7x:3.3",
     "ip_revision": "20",
-    "gen_directory": "../../../../pcileech_tbx4.gen/sources_1/ip/pcie_7x_0",
+    "gen_directory": "../../../../pcileech_100t484_x1.gen/sources_1/ip/pcie_7x_0",
     "parameters": {
       "component_parameters": {
         "mode_selection": [ { "value": "Advanced", "value_src": "user", "resolve_type": "user", "usage": "all" } ],
@@ -484,7 +484,7 @@
         "IPCONTEXT": [ { "value": "IP_Flow" } ],
         "IPREVISION": [ { "value": "20" } ],
         "MANAGED": [ { "value": "TRUE" } ],
-        "OUTPUTDIR": [ { "value": "../../../../pcileech_tbx4.gen/sources_1/ip/pcie_7x_0" } ],
+        "OUTPUTDIR": [ { "value": "../../../../pcileech_100t484_x1.gen/sources_1/ip/pcie_7x_0" } ],
         "SELECTEDSIMMODEL": [ { "value": "" } ],
         "SHAREDDIR": [ { "value": "." } ],
         "SWVERSION": [ { "value": "2023.2.2" } ],

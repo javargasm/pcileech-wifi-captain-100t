@@ -4,7 +4,7 @@
     "xci_name": "bram_bar_zero4k",
     "component_reference": "xilinx.com:ip:blk_mem_gen:8.4",
     "ip_revision": "7",
-    "gen_directory": "../../../../pcileech_tbx4.gen/sources_1/ip/bram_bar_zero4k",
+    "gen_directory": "../../../../pcileech_100t484_x1.gen/sources_1/ip/bram_bar_zero4k",
     "parameters": {
       "component_parameters": {
         "Component_Name": [ { "value": "bram_bar_zero4k", "resolve_type": "user", "usage": "all" } ],
@@ -174,7 +174,7 @@
         "IPCONTEXT": [ { "value": "IP_Flow" } ],
         "IPREVISION": [ { "value": "7" } ],
         "MANAGED": [ { "value": "TRUE" } ],
-        "OUTPUTDIR": [ { "value": "../../../../pcileech_tbx4.gen/sources_1/ip/bram_bar_zero4k" } ],
+        "OUTPUTDIR": [ { "value": "../../../../pcileech_100t484_x1.gen/sources_1/ip/bram_bar_zero4k" } ],
         "SELECTEDSIMMODEL": [ { "value": "" } ],
         "SHAREDDIR": [ { "value": "." } ],
         "SWVERSION": [ { "value": "2023.2.2" } ],
