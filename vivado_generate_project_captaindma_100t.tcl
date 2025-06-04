@@ -88,14 +88,13 @@ set_property -name "platform.description" -value "Vivado generated DSA" -objects
 set_property -name "sim.central_dir" -value "$proj_dir/${_xil_proj_name_}.ip_user_files" -objects $obj
 set_property -name "sim.ip.auto_export_scripts" -value "1" -objects $obj
 set_property -name "simulator_language" -value "Mixed" -objects $obj
-set_property -name "webtalk.activehdl_export_sim" -value "27" -objects $obj
-set_property -name "webtalk.ies_export_sim" -value "27" -objects $obj
-set_property -name "webtalk.modelsim_export_sim" -value "27" -objects $obj
-set_property -name "webtalk.questa_export_sim" -value "27" -objects $obj
-set_property -name "webtalk.riviera_export_sim" -value "27" -objects $obj
-set_property -name "webtalk.vcs_export_sim" -value "27" -objects $obj
-set_property -name "webtalk.xcelium_export_sim" -value "4" -objects $obj
-set_property -name "webtalk.xsim_export_sim" -value "27" -objects $obj
+set_property -name "webtalk.activehdl_export_sim" -value "5" -objects $obj
+set_property -name "webtalk.ies_export_sim" -value "5" -objects $obj
+set_property -name "webtalk.modelsim_export_sim" -value "5" -objects $obj
+set_property -name "webtalk.questa_export_sim" -value "5" -objects $obj
+set_property -name "webtalk.riviera_export_sim" -value "5" -objects $obj
+set_property -name "webtalk.vcs_export_sim" -value "5" -objects $obj
+set_property -name "webtalk.xsim_export_sim" -value "5" -objects $obj
 set_property -name "xpm_libraries" -value "XPM_CDC XPM_MEMORY" -objects $obj
 
 # Create 'sources_1' fileset (if not found)
@@ -118,45 +117,45 @@ set files [list \
  [file normalize "${origin_dir}/src/pcileech_tlps128_bar_controller.sv"]\
  [file normalize "${origin_dir}/src/pcileech_tlps128_cfgspace_shadow.sv"]\
  [file normalize "${origin_dir}/src/pcileech_100t484_x1_top.sv"]\
- [file normalize "${origin_dir}/pcie_7x/zdma/pcie_7x_0.v"]\
- [file normalize "${origin_dir}/pcie_7x/zdma/pcie_7x_0_axi_basic_rx.v"]\
- [file normalize "${origin_dir}/pcie_7x/zdma/pcie_7x_0_axi_basic_rx_null_gen.v"]\
- [file normalize "${origin_dir}/pcie_7x/zdma/pcie_7x_0_axi_basic_rx_pipeline.v"]\
- [file normalize "${origin_dir}/pcie_7x/zdma/pcie_7x_0_axi_basic_top.v"]\
- [file normalize "${origin_dir}/pcie_7x/zdma/pcie_7x_0_axi_basic_tx.v"]\
- [file normalize "${origin_dir}/pcie_7x/zdma/pcie_7x_0_axi_basic_tx_pipeline.v"]\
- [file normalize "${origin_dir}/pcie_7x/zdma/pcie_7x_0_axi_basic_tx_thrtl_ctl.v"]\
- [file normalize "${origin_dir}/pcie_7x/zdma/pcie_7x_0_core_top.v"]\
- [file normalize "${origin_dir}/pcie_7x/zdma/pcie_7x_0_gt_common.v"]\
- [file normalize "${origin_dir}/pcie_7x/zdma/pcie_7x_0_gt_rx_valid_filter_7x.v"]\
- [file normalize "${origin_dir}/pcie_7x/zdma/pcie_7x_0_gt_top.v"]\
- [file normalize "${origin_dir}/pcie_7x/zdma/pcie_7x_0_gt_wrapper.v"]\
- [file normalize "${origin_dir}/pcie_7x/zdma/pcie_7x_0_gtp_cpllpd_ovrd.v"]\
- [file normalize "${origin_dir}/pcie_7x/zdma/pcie_7x_0_gtp_pipe_drp.v"]\
- [file normalize "${origin_dir}/pcie_7x/zdma/pcie_7x_0_gtp_pipe_rate.v"]\
- [file normalize "${origin_dir}/pcie_7x/zdma/pcie_7x_0_gtp_pipe_reset.v"]\
- [file normalize "${origin_dir}/pcie_7x/zdma/pcie_7x_0_gtx_cpllpd_ovrd.v"]\
- [file normalize "${origin_dir}/pcie_7x/zdma/pcie_7x_0_pcie_7x.v"]\
- [file normalize "${origin_dir}/pcie_7x/zdma/pcie_7x_0_pcie_bram_7x.v"]\
- [file normalize "${origin_dir}/pcie_7x/zdma/pcie_7x_0_pcie_bram_top_7x.v"]\
- [file normalize "${origin_dir}/pcie_7x/zdma/pcie_7x_0_pcie_brams_7x.v"]\
- [file normalize "${origin_dir}/pcie_7x/zdma/pcie_7x_0_pcie_pipe_lane.v"]\
- [file normalize "${origin_dir}/pcie_7x/zdma/pcie_7x_0_pcie_pipe_misc.v"]\
- [file normalize "${origin_dir}/pcie_7x/zdma/pcie_7x_0_pcie_pipe_pipeline.v"]\
- [file normalize "${origin_dir}/pcie_7x/zdma/pcie_7x_0_pcie_top.v"]\
- [file normalize "${origin_dir}/pcie_7x/zdma/pcie_7x_0_pcie2_top.v"]\
- [file normalize "${origin_dir}/pcie_7x/zdma/pcie_7x_0_pipe_clock.v"]\
- [file normalize "${origin_dir}/pcie_7x/zdma/pcie_7x_0_pipe_drp.v"]\
- [file normalize "${origin_dir}/pcie_7x/zdma/pcie_7x_0_pipe_eq.v"]\
- [file normalize "${origin_dir}/pcie_7x/zdma/pcie_7x_0_pipe_rate.v"]\
- [file normalize "${origin_dir}/pcie_7x/zdma/pcie_7x_0_pipe_reset.v"]\
- [file normalize "${origin_dir}/pcie_7x/zdma/pcie_7x_0_pipe_sync.v"]\
- [file normalize "${origin_dir}/pcie_7x/zdma/pcie_7x_0_pipe_user.v"]\
- [file normalize "${origin_dir}/pcie_7x/zdma/pcie_7x_0_pipe_wrapper.v"]\
- [file normalize "${origin_dir}/pcie_7x/zdma/pcie_7x_0_qpll_drp.v"]\
- [file normalize "${origin_dir}/pcie_7x/zdma/pcie_7x_0_qpll_reset.v"]\
- [file normalize "${origin_dir}/pcie_7x/zdma/pcie_7x_0_qpll_wrapper.v"]\
- [file normalize "${origin_dir}/pcie_7x/zdma/pcie_7x_0_rxeq_scan.v"]\
+ [file normalize "${origin_dir}/pcie_7x/pcie_7x_0.v"]\
+ [file normalize "${origin_dir}/pcie_7x/pcie_7x_0_axi_basic_rx.v"]\
+ [file normalize "${origin_dir}/pcie_7x/pcie_7x_0_axi_basic_rx_null_gen.v"]\
+ [file normalize "${origin_dir}/pcie_7x/pcie_7x_0_axi_basic_rx_pipeline.v"]\
+ [file normalize "${origin_dir}/pcie_7x/pcie_7x_0_axi_basic_top.v"]\
+ [file normalize "${origin_dir}/pcie_7x/pcie_7x_0_axi_basic_tx.v"]\
+ [file normalize "${origin_dir}/pcie_7x/pcie_7x_0_axi_basic_tx_pipeline.v"]\
+ [file normalize "${origin_dir}/pcie_7x/pcie_7x_0_axi_basic_tx_thrtl_ctl.v"]\
+ [file normalize "${origin_dir}/pcie_7x/pcie_7x_0_core_top.v"]\
+ [file normalize "${origin_dir}/pcie_7x/pcie_7x_0_gt_common.v"]\
+ [file normalize "${origin_dir}/pcie_7x/pcie_7x_0_gt_rx_valid_filter_7x.v"]\
+ [file normalize "${origin_dir}/pcie_7x/pcie_7x_0_gt_top.v"]\
+ [file normalize "${origin_dir}/pcie_7x/pcie_7x_0_gt_wrapper.v"]\
+ [file normalize "${origin_dir}/pcie_7x/pcie_7x_0_gtp_cpllpd_ovrd.v"]\
+ [file normalize "${origin_dir}/pcie_7x/pcie_7x_0_gtp_pipe_drp.v"]\
+ [file normalize "${origin_dir}/pcie_7x/pcie_7x_0_gtp_pipe_rate.v"]\
+ [file normalize "${origin_dir}/pcie_7x/pcie_7x_0_gtp_pipe_reset.v"]\
+ [file normalize "${origin_dir}/pcie_7x/pcie_7x_0_gtx_cpllpd_ovrd.v"]\
+ [file normalize "${origin_dir}/pcie_7x/pcie_7x_0_pcie_7x.v"]\
+ [file normalize "${origin_dir}/pcie_7x/pcie_7x_0_pcie_bram_7x.v"]\
+ [file normalize "${origin_dir}/pcie_7x/pcie_7x_0_pcie_bram_top_7x.v"]\
+ [file normalize "${origin_dir}/pcie_7x/pcie_7x_0_pcie_brams_7x.v"]\
+ [file normalize "${origin_dir}/pcie_7x/pcie_7x_0_pcie_pipe_lane.v"]\
+ [file normalize "${origin_dir}/pcie_7x/pcie_7x_0_pcie_pipe_misc.v"]\
+ [file normalize "${origin_dir}/pcie_7x/pcie_7x_0_pcie_pipe_pipeline.v"]\
+ [file normalize "${origin_dir}/pcie_7x/pcie_7x_0_pcie_top.v"]\
+ [file normalize "${origin_dir}/pcie_7x/pcie_7x_0_pcie2_top.v"]\
+ [file normalize "${origin_dir}/pcie_7x/pcie_7x_0_pipe_clock.v"]\
+ [file normalize "${origin_dir}/pcie_7x/pcie_7x_0_pipe_drp.v"]\
+ [file normalize "${origin_dir}/pcie_7x/pcie_7x_0_pipe_eq.v"]\
+ [file normalize "${origin_dir}/pcie_7x/pcie_7x_0_pipe_rate.v"]\
+ [file normalize "${origin_dir}/pcie_7x/pcie_7x_0_pipe_reset.v"]\
+ [file normalize "${origin_dir}/pcie_7x/pcie_7x_0_pipe_sync.v"]\
+ [file normalize "${origin_dir}/pcie_7x/pcie_7x_0_pipe_user.v"]\
+ [file normalize "${origin_dir}/pcie_7x/pcie_7x_0_pipe_wrapper.v"]\
+ [file normalize "${origin_dir}/pcie_7x/pcie_7x_0_qpll_drp.v"]\
+ [file normalize "${origin_dir}/pcie_7x/pcie_7x_0_qpll_reset.v"]\
+ [file normalize "${origin_dir}/pcie_7x/pcie_7x_0_qpll_wrapper.v"]\
+ [file normalize "${origin_dir}/pcie_7x/pcie_7x_0_rxeq_scan.v"]\
 ]
 set imported_files [import_files -fileset sources_1 $files]
 
@@ -168,7 +167,7 @@ set file "src/pcileech_header.svh"
 set file_obj [get_files -of_objects [get_filesets sources_1] [list "*$file"]]
 set_property -name "file_type" -value "Verilog Header" -objects $file_obj
 
-set file "src/pcileech_com_e.v"
+set file "src/pcileech_com.sv"
 set file_obj [get_files -of_objects [get_filesets sources_1] [list "*$file"]]
 set_property -name "file_type" -value "SystemVerilog" -objects $file_obj
 
@@ -208,159 +207,159 @@ set file "src/pcileech_100t484_x1_top.sv"
 set file_obj [get_files -of_objects [get_filesets sources_1] [list "*$file"]]
 set_property -name "file_type" -value "SystemVerilog" -objects $file_obj
 
-set file "pcie_7x/zdma/pcie_7x_0.v"
+set file "pcie_7x/pcie_7x_0.v"
 set file_obj [get_files -of_objects [get_filesets sources_1] [list "*$file"]]
 set_property -name "file_type" -value "Verilog" -objects $file_obj
 
-set file "pcie_7x/zdma/pcie_7x_0_axi_basic_rx.v"
+set file "pcie_7x/pcie_7x_0_axi_basic_rx.v"
 set file_obj [get_files -of_objects [get_filesets sources_1] [list "*$file"]]
 set_property -name "file_type" -value "Verilog" -objects $file_obj
 
-set file "pcie_7x/zdma/pcie_7x_0_axi_basic_rx_null_gen.v"
+set file "pcie_7x/pcie_7x_0_axi_basic_rx_null_gen.v"
 set file_obj [get_files -of_objects [get_filesets sources_1] [list "*$file"]]
 set_property -name "file_type" -value "Verilog" -objects $file_obj
 
-set file "pcie_7x/zdma/pcie_7x_0_axi_basic_rx_pipeline.v"
+set file "pcie_7x/pcie_7x_0_axi_basic_rx_pipeline.v"
 set file_obj [get_files -of_objects [get_filesets sources_1] [list "*$file"]]
 set_property -name "file_type" -value "Verilog" -objects $file_obj
 
-set file "pcie_7x/zdma/pcie_7x_0_axi_basic_top.v"
+set file "pcie_7x/pcie_7x_0_axi_basic_top.v"
 set file_obj [get_files -of_objects [get_filesets sources_1] [list "*$file"]]
 set_property -name "file_type" -value "Verilog" -objects $file_obj
 
-set file "pcie_7x/zdma/pcie_7x_0_axi_basic_tx.v"
+set file "pcie_7x/pcie_7x_0_axi_basic_tx.v"
 set file_obj [get_files -of_objects [get_filesets sources_1] [list "*$file"]]
 set_property -name "file_type" -value "Verilog" -objects $file_obj
 
-set file "pcie_7x/zdma/pcie_7x_0_axi_basic_tx_pipeline.v"
+set file "pcie_7x/pcie_7x_0_axi_basic_tx_pipeline.v"
 set file_obj [get_files -of_objects [get_filesets sources_1] [list "*$file"]]
 set_property -name "file_type" -value "Verilog" -objects $file_obj
 
-set file "pcie_7x/zdma/pcie_7x_0_axi_basic_tx_thrtl_ctl.v"
+set file "pcie_7x/pcie_7x_0_axi_basic_tx_thrtl_ctl.v"
 set file_obj [get_files -of_objects [get_filesets sources_1] [list "*$file"]]
 set_property -name "file_type" -value "Verilog" -objects $file_obj
 
-set file "pcie_7x/zdma/pcie_7x_0_core_top.v"
+set file "pcie_7x/pcie_7x_0_core_top.v"
 set file_obj [get_files -of_objects [get_filesets sources_1] [list "*$file"]]
 set_property -name "file_type" -value "Verilog" -objects $file_obj
 
-set file "pcie_7x/zdma/pcie_7x_0_gt_common.v"
+set file "pcie_7x/pcie_7x_0_gt_common.v"
 set file_obj [get_files -of_objects [get_filesets sources_1] [list "*$file"]]
 set_property -name "file_type" -value "Verilog" -objects $file_obj
 
-set file "pcie_7x/zdma/pcie_7x_0_gt_rx_valid_filter_7x.v"
+set file "pcie_7x/pcie_7x_0_gt_rx_valid_filter_7x.v"
 set file_obj [get_files -of_objects [get_filesets sources_1] [list "*$file"]]
 set_property -name "file_type" -value "Verilog" -objects $file_obj
 
-set file "pcie_7x/zdma/pcie_7x_0_gt_top.v"
+set file "pcie_7x/pcie_7x_0_gt_top.v"
 set file_obj [get_files -of_objects [get_filesets sources_1] [list "*$file"]]
 set_property -name "file_type" -value "Verilog" -objects $file_obj
 
-set file "pcie_7x/zdma/pcie_7x_0_gt_wrapper.v"
+set file "pcie_7x/pcie_7x_0_gt_wrapper.v"
 set file_obj [get_files -of_objects [get_filesets sources_1] [list "*$file"]]
 set_property -name "file_type" -value "Verilog" -objects $file_obj
 
-set file "pcie_7x/zdma/pcie_7x_0_gtp_cpllpd_ovrd.v"
+set file "pcie_7x/pcie_7x_0_gtp_cpllpd_ovrd.v"
 set file_obj [get_files -of_objects [get_filesets sources_1] [list "*$file"]]
 set_property -name "file_type" -value "Verilog" -objects $file_obj
 
-set file "pcie_7x/zdma/pcie_7x_0_gtp_pipe_drp.v"
+set file "pcie_7x/pcie_7x_0_gtp_pipe_drp.v"
 set file_obj [get_files -of_objects [get_filesets sources_1] [list "*$file"]]
 set_property -name "file_type" -value "Verilog" -objects $file_obj
 
-set file "pcie_7x/zdma/pcie_7x_0_gtp_pipe_rate.v"
+set file "pcie_7x/pcie_7x_0_gtp_pipe_rate.v"
 set file_obj [get_files -of_objects [get_filesets sources_1] [list "*$file"]]
 set_property -name "file_type" -value "Verilog" -objects $file_obj
 
-set file "pcie_7x/zdma/pcie_7x_0_gtp_pipe_reset.v"
+set file "pcie_7x/pcie_7x_0_gtp_pipe_reset.v"
 set file_obj [get_files -of_objects [get_filesets sources_1] [list "*$file"]]
 set_property -name "file_type" -value "Verilog" -objects $file_obj
 
-set file "pcie_7x/zdma/pcie_7x_0_gtx_cpllpd_ovrd.v"
+set file "pcie_7x/pcie_7x_0_gtx_cpllpd_ovrd.v"
 set file_obj [get_files -of_objects [get_filesets sources_1] [list "*$file"]]
 set_property -name "file_type" -value "Verilog" -objects $file_obj
 
-set file "pcie_7x/zdma/pcie_7x_0_pcie_7x.v"
+set file "pcie_7x/pcie_7x_0_pcie_7x.v"
 set file_obj [get_files -of_objects [get_filesets sources_1] [list "*$file"]]
 set_property -name "file_type" -value "Verilog" -objects $file_obj
 
-set file "pcie_7x/zdma/pcie_7x_0_pcie_bram_7x.v"
+set file "pcie_7x/pcie_7x_0_pcie_bram_7x.v"
 set file_obj [get_files -of_objects [get_filesets sources_1] [list "*$file"]]
 set_property -name "file_type" -value "Verilog" -objects $file_obj
 
-set file "pcie_7x/zdma/pcie_7x_0_pcie_bram_top_7x.v"
+set file "pcie_7x/pcie_7x_0_pcie_bram_top_7x.v"
 set file_obj [get_files -of_objects [get_filesets sources_1] [list "*$file"]]
 set_property -name "file_type" -value "Verilog" -objects $file_obj
 
-set file "pcie_7x/zdma/pcie_7x_0_pcie_brams_7x.v"
+set file "pcie_7x/pcie_7x_0_pcie_brams_7x.v"
 set file_obj [get_files -of_objects [get_filesets sources_1] [list "*$file"]]
 set_property -name "file_type" -value "Verilog" -objects $file_obj
 
-set file "pcie_7x/zdma/pcie_7x_0_pcie_pipe_lane.v"
+set file "pcie_7x/pcie_7x_0_pcie_pipe_lane.v"
 set file_obj [get_files -of_objects [get_filesets sources_1] [list "*$file"]]
 set_property -name "file_type" -value "Verilog" -objects $file_obj
 
-set file "pcie_7x/zdma/pcie_7x_0_pcie_pipe_misc.v"
+set file "pcie_7x/pcie_7x_0_pcie_pipe_misc.v"
 set file_obj [get_files -of_objects [get_filesets sources_1] [list "*$file"]]
 set_property -name "file_type" -value "Verilog" -objects $file_obj
 
-set file "pcie_7x/zdma/pcie_7x_0_pcie_pipe_pipeline.v"
+set file "pcie_7x/pcie_7x_0_pcie_pipe_pipeline.v"
 set file_obj [get_files -of_objects [get_filesets sources_1] [list "*$file"]]
 set_property -name "file_type" -value "Verilog" -objects $file_obj
 
-set file "pcie_7x/zdma/pcie_7x_0_pcie_top.v"
+set file "pcie_7x/pcie_7x_0_pcie_top.v"
 set file_obj [get_files -of_objects [get_filesets sources_1] [list "*$file"]]
 set_property -name "file_type" -value "Verilog" -objects $file_obj
 
-set file "pcie_7x/zdma/pcie_7x_0_pcie2_top.v"
+set file "pcie_7x/pcie_7x_0_pcie2_top.v"
 set file_obj [get_files -of_objects [get_filesets sources_1] [list "*$file"]]
 set_property -name "file_type" -value "Verilog" -objects $file_obj
 
-set file "pcie_7x/zdma/pcie_7x_0_pipe_clock.v"
+set file "pcie_7x/pcie_7x_0_pipe_clock.v"
 set file_obj [get_files -of_objects [get_filesets sources_1] [list "*$file"]]
 set_property -name "file_type" -value "Verilog" -objects $file_obj
 
-set file "pcie_7x/zdma/pcie_7x_0_pipe_drp.v"
+set file "pcie_7x/pcie_7x_0_pipe_drp.v"
 set file_obj [get_files -of_objects [get_filesets sources_1] [list "*$file"]]
 set_property -name "file_type" -value "Verilog" -objects $file_obj
 
-set file "pcie_7x/zdma/pcie_7x_0_pipe_eq.v"
+set file "pcie_7x/pcie_7x_0_pipe_eq.v"
 set file_obj [get_files -of_objects [get_filesets sources_1] [list "*$file"]]
 set_property -name "file_type" -value "Verilog" -objects $file_obj
 
-set file "pcie_7x/zdma/pcie_7x_0_pipe_rate.v"
+set file "pcie_7x/pcie_7x_0_pipe_rate.v"
 set file_obj [get_files -of_objects [get_filesets sources_1] [list "*$file"]]
 set_property -name "file_type" -value "Verilog" -objects $file_obj
 
-set file "pcie_7x/zdma/pcie_7x_0_pipe_reset.v"
+set file "pcie_7x/pcie_7x_0_pipe_reset.v"
 set file_obj [get_files -of_objects [get_filesets sources_1] [list "*$file"]]
 set_property -name "file_type" -value "Verilog" -objects $file_obj
 
-set file "pcie_7x/zdma/pcie_7x_0_pipe_sync.v"
+set file "pcie_7x/pcie_7x_0_pipe_sync.v"
 set file_obj [get_files -of_objects [get_filesets sources_1] [list "*$file"]]
 set_property -name "file_type" -value "Verilog" -objects $file_obj
 
-set file "pcie_7x/zdma/pcie_7x_0_pipe_user.v"
+set file "pcie_7x/pcie_7x_0_pipe_user.v"
 set file_obj [get_files -of_objects [get_filesets sources_1] [list "*$file"]]
 set_property -name "file_type" -value "Verilog" -objects $file_obj
 
-set file "pcie_7x/zdma/pcie_7x_0_qpll_drp.v"
+set file "pcie_7x/pcie_7x_0_qpll_drp.v"
 set file_obj [get_files -of_objects [get_filesets sources_1] [list "*$file"]]
 set_property -name "file_type" -value "Verilog" -objects $file_obj
 
-set file "pcie_7x/zdma/pcie_7x_0_pipe_wrapper.v"
+set file "pcie_7x/pcie_7x_0_pipe_wrapper.v"
 set file_obj [get_files -of_objects [get_filesets sources_1] [list "*$file"]]
 set_property -name "file_type" -value "Verilog" -objects $file_obj
 
-set file "pcie_7x/zdma/pcie_7x_0_qpll_reset.v"
+set file "pcie_7x/pcie_7x_0_qpll_reset.v"
 set file_obj [get_files -of_objects [get_filesets sources_1] [list "*$file"]]
 set_property -name "file_type" -value "Verilog" -objects $file_obj
 
-set file "pcie_7x/zdma/pcie_7x_0_qpll_wrapper.v"
+set file "pcie_7x/pcie_7x_0_qpll_wrapper.v"
 set file_obj [get_files -of_objects [get_filesets sources_1] [list "*$file"]]
 set_property -name "file_type" -value "Verilog" -objects $file_obj
 
-set file "pcie_7x/zdma/pcie_7x_0_rxeq_scan.v"
+set file "pcie_7x/pcie_7x_0_rxeq_scan.v"
 set file_obj [get_files -of_objects [get_filesets sources_1] [list "*$file"]]
 set_property -name "file_type" -value "Verilog" -objects $file_obj
 
@@ -384,25 +383,6 @@ set imported_files [import_files -fileset sources_1 $files]
 # None
 # Set 'sources_1' fileset file properties for local files
 set file "bram_pcie_cfgspace/bram_pcie_cfgspace.xci"
-set file_obj [get_files -of_objects [get_filesets sources_1] [list "*$file"]]
-set_property -name "generate_files_for_reference" -value "0" -objects $file_obj
-set_property -name "registered_with_manager" -value "1" -objects $file_obj
-if { ![get_property "is_locked" $file_obj] } {
-  set_property -name "synth_checkpoint_mode" -value "Singular" -objects $file_obj
-}
-
-
-# Set 'sources_1' fileset object
-set obj [get_filesets sources_1]
-# Import local files from the original project
-set files [list \
- [file normalize "${origin_dir}/ip/100T/clk_wiz_0.xci"]\
-]
-set imported_files [import_files -fileset sources_1 $files]
-# Set 'sources_1' fileset file properties for remote files
-# None
-# Set 'sources_1' fileset file properties for local files
-set file "clk_wiz_0/clk_wiz_0.xci"
 set file_obj [get_files -of_objects [get_filesets sources_1] [list "*$file"]]
 set_property -name "generate_files_for_reference" -value "0" -objects $file_obj
 set_property -name "registered_with_manager" -value "1" -objects $file_obj
@@ -643,25 +623,6 @@ if { ![get_property "is_locked" $file_obj] } {
 set obj [get_filesets sources_1]
 # Import local files from the original project
 set files [list \
- [file normalize "${origin_dir}/ip/100T/pcie_7x_0.xci"]\
-]
-set imported_files [import_files -fileset sources_1 $files]
-# Set 'sources_1' fileset file properties for remote files
-# None
-# Set 'sources_1' fileset file properties for local files
-set file "pcie_7x_0/pcie_7x_0.xci"
-set file_obj [get_files -of_objects [get_filesets sources_1] [list "*$file"]]
-set_property -name "generate_files_for_reference" -value "0" -objects $file_obj
-set_property -name "registered_with_manager" -value "1" -objects $file_obj
-if { ![get_property "is_locked" $file_obj] } {
-  set_property -name "synth_checkpoint_mode" -value "Singular" -objects $file_obj
-}
-
-
-# Set 'sources_1' fileset object
-set obj [get_filesets sources_1]
-# Import local files from the original project
-set files [list \
  [file normalize "${origin_dir}/ip/fifo_64_64.xci"]\
 ]
 set imported_files [import_files -fileset sources_1 $files]
@@ -784,7 +745,6 @@ set file_imported [import_files -fileset constrs_1 [list $file]]
 set file "src/pcileech_100t484_x1_captaindma_100t.xdc"
 set file_obj [get_files -of_objects [get_filesets constrs_1] [list "*$file"]]
 set_property -name "file_type" -value "XDC" -objects $file_obj
-set_property -name "processing_order" -value "EARLY" -objects $file_obj
 
 # Set 'constrs_1' fileset properties
 set obj [get_filesets constrs_1]
@@ -801,7 +761,6 @@ set obj [get_filesets sim_1]
 
 # Set 'sim_1' fileset properties
 set obj [get_filesets sim_1]
-set_property -name "hbs.configure_design_for_hier_access" -value "1" -objects $obj
 set_property -name "top" -value "pcileech_100t484_x1_top" -objects $obj
 set_property -name "top_auto_set" -value "0" -objects $obj
 
@@ -835,16 +794,8 @@ if { $obj != "" } {
 
 }
 set obj [get_runs synth_1]
-set_property -name "needs_refresh" -value "1" -objects $obj
 set_property -name "part" -value "xc7a100tfgg484-2" -objects $obj
-set_property -name "auto_incremental_checkpoint" -value "1" -objects $obj
 set_property -name "strategy" -value "Vivado Synthesis Defaults" -objects $obj
-set_property -name "steps.synth_design.args.directive" -value "PerformanceOptimized" -objects $obj
-set_property -name "steps.synth_design.args.fsm_extraction" -value "one_hot" -objects $obj
-set_property -name "steps.synth_design.args.keep_equivalent_registers" -value "1" -objects $obj
-set_property -name "steps.synth_design.args.resource_sharing" -value "off" -objects $obj
-set_property -name "steps.synth_design.args.no_lc" -value "1" -objects $obj
-set_property -name "steps.synth_design.args.shreg_min_size" -value "5" -objects $obj
 
 # set the current synth run
 current_run -synthesis [get_runs synth_1]
@@ -868,7 +819,6 @@ set obj [get_report_configs -of_objects [get_runs impl_1] impl_1_init_report_tim
 if { $obj != "" } {
 set_property -name "is_enabled" -value "0" -objects $obj
 set_property -name "options.max_paths" -value "10" -objects $obj
-set_property -name "options.report_unconstrained" -value "1" -objects $obj
 
 }
 # Create 'impl_1_opt_report_drc_0' report (if not found)
@@ -887,7 +837,6 @@ set obj [get_report_configs -of_objects [get_runs impl_1] impl_1_opt_report_timi
 if { $obj != "" } {
 set_property -name "is_enabled" -value "0" -objects $obj
 set_property -name "options.max_paths" -value "10" -objects $obj
-set_property -name "options.report_unconstrained" -value "1" -objects $obj
 
 }
 # Create 'impl_1_power_opt_report_timing_summary_0' report (if not found)
@@ -898,7 +847,6 @@ set obj [get_report_configs -of_objects [get_runs impl_1] impl_1_power_opt_repor
 if { $obj != "" } {
 set_property -name "is_enabled" -value "0" -objects $obj
 set_property -name "options.max_paths" -value "10" -objects $obj
-set_property -name "options.report_unconstrained" -value "1" -objects $obj
 
 }
 # Create 'impl_1_place_report_io_0' report (if not found)
@@ -952,7 +900,6 @@ set obj [get_report_configs -of_objects [get_runs impl_1] impl_1_place_report_ti
 if { $obj != "" } {
 set_property -name "is_enabled" -value "0" -objects $obj
 set_property -name "options.max_paths" -value "10" -objects $obj
-set_property -name "options.report_unconstrained" -value "1" -objects $obj
 
 }
 # Create 'impl_1_post_place_power_opt_report_timing_summary_0' report (if not found)
@@ -963,7 +910,6 @@ set obj [get_report_configs -of_objects [get_runs impl_1] impl_1_post_place_powe
 if { $obj != "" } {
 set_property -name "is_enabled" -value "0" -objects $obj
 set_property -name "options.max_paths" -value "10" -objects $obj
-set_property -name "options.report_unconstrained" -value "1" -objects $obj
 
 }
 # Create 'impl_1_phys_opt_report_timing_summary_0' report (if not found)
@@ -974,7 +920,6 @@ set obj [get_report_configs -of_objects [get_runs impl_1] impl_1_phys_opt_report
 if { $obj != "" } {
 set_property -name "is_enabled" -value "0" -objects $obj
 set_property -name "options.max_paths" -value "10" -objects $obj
-set_property -name "options.report_unconstrained" -value "1" -objects $obj
 
 }
 # Create 'impl_1_route_report_drc_0' report (if not found)
@@ -1016,7 +961,6 @@ if { [ string equal [get_report_configs -of_objects [get_runs impl_1] impl_1_rou
 set obj [get_report_configs -of_objects [get_runs impl_1] impl_1_route_report_timing_summary_0]
 if { $obj != "" } {
 set_property -name "options.max_paths" -value "10" -objects $obj
-set_property -name "options.report_unconstrained" -value "1" -objects $obj
 
 }
 # Create 'impl_1_route_report_incremental_reuse_0' report (if not found)
@@ -1051,7 +995,6 @@ if { [ string equal [get_report_configs -of_objects [get_runs impl_1] impl_1_pos
 set obj [get_report_configs -of_objects [get_runs impl_1] impl_1_post_route_phys_opt_report_timing_summary_0]
 if { $obj != "" } {
 set_property -name "options.max_paths" -value "10" -objects $obj
-set_property -name "options.report_unconstrained" -value "1" -objects $obj
 set_property -name "options.warn_on_violation" -value "1" -objects $obj
 
 }
@@ -1067,23 +1010,13 @@ set_property -name "options.warn_on_violation" -value "1" -objects $obj
 set obj [get_runs impl_1]
 set_property -name "part" -value "xc7a100tfgg484-2" -objects $obj
 set_property -name "strategy" -value "Vivado Implementation Defaults" -objects $obj
-set_property -name "steps.place_design.args.directive" -value "ExtraTimingOpt" -objects $obj
-set_property -name "steps.phys_opt_design.args.directive" -value "Explore" -objects $obj
-set_property -name "steps.route_design.args.directive" -value "NoTimingRelaxation" -objects $obj
 set_property -name "steps.phys_opt_design.is_enabled" -value "1" -objects $obj
-set_property -name "steps.post_route_phys_opt_design.is_enabled" -value "1" -objects $obj
-set_property -name "steps.post_route_phys_opt_design.args.directive" -value "AddRetime" -objects $obj
 set_property -name "steps.write_bitstream.args.bin_file" -value "1" -objects $obj
 set_property -name "steps.write_bitstream.args.readback_file" -value "0" -objects $obj
 set_property -name "steps.write_bitstream.args.verbose" -value "0" -objects $obj
 
 # set the current impl run
 current_run -implementation [get_runs impl_1]
-catch {
- if { $idrFlowPropertiesConstraints != {} } {
-   set_param runs.disableIDRFlowPropertyConstraints $idrFlowPropertiesConstraints
- }
-}
 
 puts "INFO: Project created:${_xil_proj_name_}"
 # Create 'drc_1' gadget (if not found)
